@@ -11,16 +11,19 @@ struct ContentView: View {
         Button("add"){
             answer = number1 + number2
         }
+        .foregroundStyle(.purple)
+        .opacity(0.7)
         Button {
             answer = number1 - number2
         } label: {
             Text("subtract")
         }
+        .tint(.purple)
         Button("multiply"){
             answer = number1 * number2
         }
-        
-        
+        .foregroundStyle(.purple)
+        .blur(radius: 1)
         Text("\(answer)")
     }
 }
